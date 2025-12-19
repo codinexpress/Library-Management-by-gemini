@@ -1,13 +1,13 @@
 
 import { GoogleGenAI } from "@google/genai";
-import { Book } from "../types";
-
-const API_KEY = process.env.API_KEY || "";
+import { Book } from "../types.ts";
 
 export const getLibrarianResponse = async (query: string, inventory: Book[]) => {
-  if (!API_KEY) return "API Key is missing. Please check your environment.";
+  // Access process.env inside the function scope to ensure it's evaluated at runtime
+  const apiKey = process.env.API_KEY;
+  if (!apiKey) return "API Key is missing. Please check your environment.";
 
-  const ai = new GoogleGenAI({ apiKey: API_KEY });
+  const ai = new GoogleGenAI({ apiKey });
   const modelName = 'gemini-3-flash-preview';
   
   const inventoryContext = inventory.map(b => 

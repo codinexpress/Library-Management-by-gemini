@@ -1,5 +1,5 @@
 
-import { Book } from "../types";
+import { Book } from "../types.ts";
 
 declare var initSqlJs: any;
 

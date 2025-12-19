@@ -1,7 +1,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
-import { Book, ChatMessage } from '../types';
-import { getLibrarianResponse } from '../services/geminiService';
+import { Book, ChatMessage } from '../types.ts';
+import { getLibrarianResponse } from '../services/geminiService.ts';
 
 interface Props {
   inventory: Book[];

@@ -1,10 +1,10 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
-import { initDatabase, getBooks, addBook, updateBookStatus, deleteBook, connectToFile, createNewFile, isFileSystemSupported } from './db/database';
-import { Book, LibraryStats } from './types';
-import BookList from './components/BookList';
-import StatsCards from './components/StatsCards';
-import LibrarianChat from './components/LibrarianChat';
+import { initDatabase, getBooks, addBook, updateBookStatus, deleteBook, connectToFile, createNewFile, isFileSystemSupported } from './db/database.ts';
+import { Book, LibraryStats } from './types.ts';
+import BookList from './components/BookList.tsx';
+import StatsCards from './components/StatsCards.tsx';
+import LibrarianChat from './components/LibrarianChat.tsx';
 
 const App: React.FC = () => {
   const [books, setBooks] = useState<Book[]>([]);

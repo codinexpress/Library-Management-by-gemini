@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { LibraryStats } from '../types';
+import { LibraryStats } from '../types.ts';
 
 interface Props {
   stats: LibraryStats;
