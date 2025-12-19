@@ -1,0 +1,5 @@
+{
+  "name": "Lumina Library Pro",
+  "description": "A professional-grade library management system using SQLite and the File System Access API for local-first data storage, featuring an AI-powered librarian.",
+  "requestFramePermissions": []
+}
